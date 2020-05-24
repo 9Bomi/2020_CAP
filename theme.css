@@ -3,9 +3,16 @@ body {
   padding-bottom: 20px;
 }
 
-h1, p {
+h1 {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
 }
+
+p ,a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
 
 .theme-dropdown .dropdown-menu {
   position: static;
