@@ -38,7 +38,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="members.html">Members</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -46,24 +46,51 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome!</h1>
-        <p>This is a main page for our project. In this page, you can input image & get the output.<br>
-        You can see the detail of our project by clicking the button below.</p>
-        <p><a class="btn btn-primary btn" href="about.html" role="button">Learn more &raquo;</a></p>
+        <p>This is a main page for our project. 
+        <br>In this page, you can run our pogram by following the instructions.<br>
+        <br>You can see the <mark><strong>detail of our project</strong></mark> by clicking the button below.</p>
+        
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-1">
+            <center>
+              <p>👇<a class="btn btn-primary btn" href="about.html" role="button">Learn more &raquo;</a></p>
+            </center>
+          </div>
+        
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <h1>Input image</h1>
+          <h1>Input your 🚗 image</h1>
+          <hr>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFile">Upload image file</label><br>
+              <p class="help-block">1. Choose the image file.</p>
+              <input type="file" id="exampleInputFile"><br>
+              <p class="help-block">2. Submit the image file.</p>
+            </div>
+          <button type="submit" class="btn btn-success btn-lg btn-block">Submit image</button>
+          </form>
         </div> 
+        <div class="col-md-2">
+          <h1><center>➡</center></h1>        
+        </div>
         <div class="col-md-5">
-          <h1>Result</h1>
+          <h1><center>🔢 Result </center></h1>
+          <hr>
+          <h2>The car plate number is..</h2><br>
+          <div class="jumbotron well">
+              <h1>12 ga 1234</h1>
+          </div>
         </div>
       </div>
-    </div>
+    </div><br>
 
-    <hr><!--line-->
+    <hr><!--line & undertag-->
     <div class="container">
       <footer>
         <p>&copy; KNU CSE 2020 CAP Team 8</p>
