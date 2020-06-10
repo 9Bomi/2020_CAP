@@ -68,11 +68,25 @@
           <hr>
           <form>
             <div class="form-group">
-              <label for="exampleInputFile">Upload image file</label><br>
               <p class="help-block">1. Choose the image file.</p>
-              <input type="file" id="exampleInputFile"><br>
+              <img id="preview" src="img/preview.jpg" width="500" alt="preview image" align="center" class="img-thumbnail"><br><br>
+              <input type="file" id="getfile" accept="image/*">
+              <script> 
+                var file = document.querySelector('#getfile');
+
+                file.onchange = function () { 
+                    var fileList = file.files ;
+                    
+                    var reader = new FileReader();
+                    reader.readAsDataURL(fileList [0]);
+
+                    reader.onload = function  () {
+                        document.querySelector('#preview').src = reader.result;
+                    }; 
+                }; 
+              </script><br>
               <p class="help-block">2. Submit the image file.</p>
-            </div>
+          </div>
           <button type="submit" class="btn btn-success btn-lg btn-block">Submit image</button>
           </form>
         </div> 
