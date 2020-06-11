@@ -64,12 +64,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <h1>Input your 🚗 image</h1>
+          <h1><center>Input your 🚗 image</center></h1>
           <hr>
-          <form>
+          <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <p class="help-block">1. Choose the image file.</p>
-              <img id="preview" src="img/preview.jpg" width="500" alt="preview image" align="center" class="img-thumbnail"><br><br>
+              <img id="preview" src="img/preview.jpg" width="500" alt="preview image" align="center" class="img-thumbnail center-block"><br><br>
               <input type="file" id="getfile" accept="image/*">
               <script> 
                 var file = document.querySelector('#getfile');
@@ -86,8 +86,8 @@
                 }; 
               </script><br>
               <p class="help-block">2. Submit the image file.</p>
-          </div>
-          <button type="submit" class="btn btn-success btn-lg btn-block">Submit image</button>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Submit image</button>
           </form>
         </div> 
         <div class="col-md-2">
